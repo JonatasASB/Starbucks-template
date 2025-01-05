@@ -38,6 +38,10 @@ h1 {
     font-weight: 600;
     
 }
+p {
+    line-height: 25.6px;
+    margin-bottom: 40px;
+}
 .button {
     display: inline-block;
     border: 2px solid #454545;
@@ -120,10 +124,7 @@ h1 {
 .area-1--content {
     padding: 50px 100px;
 }
-.area-1--text {
-    line-height: 25.6px;
-    margin-bottom: 40px;
-}
+
 .area-1--quote {
     margin-bottom: 35px;
     font-style: italic;
@@ -163,5 +164,27 @@ h1 {
     grid-column: 1 / 2;
     background-image: url('../images/f3.jpg');
     background-position: center;
+    background-size: cover;
+}
+#area-3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.area-3--content {
+    padding: 200px 100px;
+}
+.area-3--text {
+    line-height: 25.6px;
+    margin-bottom: 40px;
+}
+.area-3--img {
+    background-image: url('../images/f5.jpg');
+    background-position: center;
+    background-size: cover;
+    
+}
+.area-3--content {
+    background-image: url('../images/bg2.jpg');
+    background-position: left;
     background-size: cover;
 }
