@@ -8,6 +8,8 @@ body {
     text-decoration: none;
     border: 0;
     outline: 0;
+    margin: 0;
+    padding: 0;
 }
 header .line {
     background-color: #117050;
@@ -56,4 +58,33 @@ header .line {
 }
 .header--menu i {
     cursor: pointer;
+}
+#banner {
+    background-image: url('../images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 75px 0;
+}
+.container.area--banner {
+   padding: 20px;
+}
+#banner h1 {
+    font-size: 96px;
+    line-height: 105.6px;
+    font-family: 'oswald', sans-serif;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.banner--images {
+    margin-top: 60px;
+}
+.banner--images img {
+    width: 155px;
+    height: 155px;
+    border: 6px solid #117050;
+    border-radius: 50%;
+    margin: 0 20px;
+}
+.banner--images img:first-child {
+    margin-left: 0;
 }
