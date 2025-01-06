@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
 body, html {
     font-family: Open sans, sans sans-serif;
-    overflow-x: hidden;
+    
 }
 * {
     resize: none;
@@ -226,7 +226,7 @@ footer div {
         padding: 0 20px;
     }
 }
-@media (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
     .container {
         padding: 0 20px;
     }
@@ -241,5 +241,58 @@ footer div {
     }
     #area-3 {
             grid-template-columns: 3fr 2fr ;
+    }
+}
+@media (max-width: 426px) {
+    .container {
+        padding: 0 20px;
+    }
+    .header--area {
+        justify-content: space-around;
+    }
+    .header--menu {
+        margin-left: 2em;
+    }
+    .header--search input {
+        max-width: 80px;
+        padding: 7px 20px 7px 10px;
+    }
+    .header--search button {
+        margin-left: -20px;
+    }
+    h1 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+    h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .banner--images img {
+        width: 70px;
+        height: 70px;
+        margin: 0 15px 0 0;
+        border: 4px solid #117050;
+    }
+    #area-1,
+    #area-2,
+    #area-3,
+    #area-4 {
+        grid-template-columns: 1fr;
+    }
+    .area-1--content,
+    .area-2--content,
+    .area-3--content,
+    .area-4--content {
+        padding: 50px 20px;
+    }
+    .area-1--img1 {
+        height: 230px;
+    }
+    #area-5 {
+        height: 250px;
+    }
+    footer div {
+        margin: 20px 0;
     }
 }
