@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
-body {
+body, html {
     font-family: Open sans, sans sans-serif;
+    overflow-x: hidden;
 }
 * {
     resize: none;
@@ -16,7 +17,7 @@ header .line {
     height: 10px;
 }
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: auto;
 }
 .bar {
@@ -213,9 +214,32 @@ p {
 footer {
     background-color: #333333;
     padding: 30px 0;
+    text-align: center;
 }
 footer div {
-    text-align: center;
+    
     margin: 50px 0;
     color: #fff;
+}
+@media (min-width: 769px) and (max-width:1140px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    #area-1 {
+        grid-template-columns: 3fr 2fr ;
+    }
+    .area-1--img1 {
+        height: 300px;
+    }
+    #area-2 {
+        grid-template-columns: 2fr 3fr;
+    }
+    #area-3 {
+            grid-template-columns: 3fr 2fr ;
+    }
 }
